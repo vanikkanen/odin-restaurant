@@ -3,7 +3,16 @@ import { homePage } from "./components/home-page/home-page"
 import { menuPage } from "./components/menu-page/menu-page"
 import { contactPage } from "./components/contact-page/contact-page"
 
-console.log("Hello from JS!")
+function loadPage(pageFunction) {
+    const content = document.querySelector("#content")
+    content.innerHTML = ""
+    content.appendChild(pageFunction())
+}
 
-const content = document.querySelector("#content")
-content.appendChild(contactPage())
+document.addEventListener("DOMContentLoaded", () => {
+    loadPage(homePage)
+})
+
+document.querySelector("#home-btn").addEventListener("click", () => loadPage(homePage))
+document.querySelector("#menu-btn").addEventListener("click", () => loadPage(menuPage))
+document.querySelector("#contact-btn").addEventListener("click", () => loadPage(contactPage))
