@@ -5,6 +5,11 @@ export function menuPage() {
     const menuContainer = document.createElement("div")
     menuContainer.classList.add("menu-container")
 
+    const menuTitle = document.createElement("h1")
+    menuTitle.textContent = "Menu"
+    menuTitle.classList.add("menu-title")
+    menuContainer.appendChild(menuTitle)
+
     for (const dish of dishes) {
         const menuItemElement = menuItem(dish.title, dish.description, dish.image)
         menuContainer.appendChild(menuItemElement)
