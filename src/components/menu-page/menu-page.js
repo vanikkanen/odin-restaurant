@@ -11,20 +11,20 @@ export function menuPage() {
     menuContainer.appendChild(menuTitle)
 
     for (const dish of dishes) {
-        const menuItemElement = menuItem(dish.title, dish.description, dish.image)
+        const menuItemElement = menuItem(dish.title, dish.price, dish.description, dish.image)
         menuContainer.appendChild(menuItemElement)
     }
 
     return menuContainer
 }
 
-function menuItem(title, description, image) {
+function menuItem(title, price, description, image) {
 
     const itemContainer = document.createElement("div")
     itemContainer.classList.add("menu-item")
 
     const titleElement = document.createElement("h3")
-    titleElement.textContent = title
+    titleElement.textContent = title + " - " + price
     titleElement.classList.add("menu-item-title")
 
     const descriptionElement = document.createElement("p")
