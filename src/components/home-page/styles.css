@@ -1,3 +1,25 @@
 .home-container {
-    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    flex: 1;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/src/assets/crispy-kingdom.png);
+    background-size: cover;
+    background-position: center center;
+    padding: 32px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heading-text, .body-text {
+    color: var(--secondary-color-cream);
+}
+
+.accent-text {
+    color: var(--primary-color-yellow)
+}
+
+.special-text {
+    font-family: Bangers, sans-serif;
 }

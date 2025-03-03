@@ -1,3 +1,90 @@
-body {
-    background-color: lightblue;
+@font-face {
+    font-family: Bangers;
+    src: url(./assets/Bangers-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(./assets/Lato-Regular.ttf);
+}
+
+:root {
+    --primary-color-yellow: #FFC107;
+    --primary-color-orange:#FF5722;
+    --secondary-color-brown: #5D4037;
+    --secondary-color-cream: #FFF3E0;
+    --accent-color-red: #D32F2F;
+    --accent-color-white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: var(--primary-color-yellow);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    flex: 1;
+    display: flex;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: var(--secondary-color-brown);
+    color: var(--accent-color-white);
+    border-color: var(--secondary-color-cream);
+    transition: 1s;
+}
+
+button:hover {
+    background-color: var(--accent-color-red);
+    box-shadow: 0px 5px 5px var(--accent-color-red);
+    transition: 0.2s;
+    border-style: inset;
+}
+
+.heading-text {
+    font-family: Bangers, sans-serif;
+    font-size: 4rem;
+}
+
+.body-text {
+    font-family: Lato, sans-serif;
+    font-size: 1.5rem;
+}
+
+.footer {
+    font-family: Lato, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--accent-color-white);
+    gap: 5px;
+    padding: 5px;
+}
+
+.image-link {
+    text-decoration: none;
 }
