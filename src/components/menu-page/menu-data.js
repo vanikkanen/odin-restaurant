@@ -1,6 +1,9 @@
 import theRoyalClassicImage from "../../assets/the-royal-classic.png"
 import theCheesyThroneImage from "../../assets/the-cheesy-throne.png"
 import theFirelordFriesImage from "../../assets/the-firelord-fries.png"
+import theMonarchMeltImage from "../../assets/the-monarch-melt.png"
+import theGlobalNomadImage from "../../assets/the-global-nomad.png"
+import theTruffleBaronImage from "../../assets/the-truffle-baron.png"
 
 export const dishes = [
     {
@@ -25,18 +28,18 @@ export const dishes = [
         title: "🥓 4. The Monarch Melt",
         price: "$10.99",
         description: "Loaded fries stacked high with crispy bacon, melted cheddar, caramelized onions, and a drizzle of garlic parmesan aioli.",
-        image: theRoyalClassicImage
+        image: theMonarchMeltImage
     },
     {
         title: "🌍 5. The Global Nomad",
         price: "$11.99",
         description: "A world-inspired fry platter featuring curry-spiced fries with tikka masala sauce, Greek-style fries with feta and tzatziki, and Mexican street fries with chipotle crema and cotija cheese.",
-        image: theRoyalClassicImage
+        image: theGlobalNomadImage
     },
     {
         title: "🍄 6. The Truffle Baron",
         price: "$12.99",
         description: "Luxurious truffle oil-infused fries dusted with parmesan, fresh herbs, and black garlic seasoning, served with a side of creamy truffle aioli.",
-        image: theRoyalClassicImage
+        image: theTruffleBaronImage
     },
 ]
