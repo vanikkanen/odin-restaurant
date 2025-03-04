@@ -18,6 +18,7 @@ export function contactPage() {
     contactContainer.appendChild(contactTitle)
 
     const contactInformation = document.createElement("div")
+    contactInformation.classList.add("contact-information")
     contactInformation.innerHTML = `
         <h2>Contact Us</h2>
         <p><strong>📍 Address:</strong> ${contactInfo.address}</p>
